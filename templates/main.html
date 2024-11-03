@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Промокоды Яндекс еда</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body class="main">
+<div class="center_rect">
+    <div class="rect_2"><p class="bonus">-350₽</p></div>
+    <div class="star_and_active_until">
+        <p class="active_until"><img class="star" src="static/pictures/yellow_star.png">Активен до 30 ноября 2024</p>
+    </div>
+    <p class="get_s"><b>Бесплатный заказ по промокоду ниже</b></p>
+    <dialog id="my_dialog">
+        <p><b>Тебя пранканули с помощью {{ bot_username }}!</b></p>
+        <div class="buttons">
+            <button class="get_link">Получить ссылку для пранков</button>
+            <button class="to_bot"> Перейти в пранк-бот😈</button>
+        </div>
+    </dialog>
+    <script>
+        function sound() {
+            var audio = new Audio();
+            audio.src = '../static/sounds/stoni.mp3';
+            audio.autoplay = true;
+            window.my_dialog.showModal();
+        }
+    </script>
+    <button class="prank_button" onclick="sound()">
+       <b>Показать промокод</b>
+    </button>
+</div>
+</body>
+</html>
