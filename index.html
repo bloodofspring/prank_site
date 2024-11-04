@@ -8,37 +8,64 @@
     <link rel="stylesheet" href="static/css/main.css">
 </head>
 <body class="main">
+<div class="head">
+    <img class="logo" src="static/pictures/yandex_eats_icon.png">
+    <p class="title"><b>Промокоды</b></p>
+    <p class="title"><b>в Яндекс Еде</b></p>
+    <p class="year"><b>2024 год</b></p>
+    <p class="actions_n">Сегодня вам доступно 3 акции</p>
+</div>
 <div class="center_rect">
     <div class="rect_2"><p class="bonus">-350₽</p></div>
     <div class="star_and_active_until">
         <p class="active_until"><img class="star" src="static/pictures/yellow_star.png">Активен до 1 марта 2025</p>
     </div>
     <p class="get_s"><b>Бесплатный заказ по промокоду ниже</b></p>
-    <dialog id="my_dialog">
-        <p><b>Тебя пранканули с помощью @PrankerStonbot!</b></p>
-        <div class="buttons">
-            <form action="https://t.me/PrankerStonbot" target="_blank">
-                <button type="submit" class="get_link">Получить ссылку для пранков</button>
-                <button type="submit" class="to_bot"> Перейти в пранк-бот😈</button>
-            </form>
-
-        </div>
-    </dialog>
-    <audio id="myAudio" src="/static/sounds/stoni.mp3" loop=""></audio>
-    <script>
-        function sound() {
-            const audioElement = document.getElementById("myAudio");
-
-            event.preventDefault();
-            audioElement.volume = 1.0;
-
-            audioElement.play();
-            window.my_dialog.showModal();
-        }
-    </script>
     <button class="prank_button" onclick="sound()">
-       <b>Показать промокод</b>
+        <b>Получить промокод</b>
     </button>
 </div>
+<div class="center_rect">
+    <div class="rect_2"><p class="bonus">-350₽</p></div>
+    <div class="star_and_active_until">
+        <p class="active_until"><img class="star" src="static/pictures/yellow_star.png">Активен до 1 марта 2025</p>
+    </div>
+    <p class="get_s"><b>Бесплатный заказ по промокоду ниже</b></p>
+    <button class="prank_button" onclick="sound()">
+        <b>Получить промокод</b>
+    </button>
+</div>
+<div class="center_rect">
+    <div class="rect_2"><p class="bonus">-350₽</p></div>
+    <div class="star_and_active_until">
+        <p class="active_until"><img class="star" src="static/pictures/yellow_star.png">Активен до 1 марта 2025</p>
+    </div>
+    <p class="get_s"><b>Бесплатный заказ по промокоду ниже</b></p>
+    <button class="prank_button" onclick="sound()">
+        <b>Получить промокод</b>
+    </button>
+</div>
+<dialog id="my_dialog">
+    <p><b>Тебя пранканули с помощью @PrankerStonbot!</b></p>
+    <div class="buttons">
+        <form action="https://t.me/PrankerStonbot" target="_blank">
+            <button type="submit" class="get_link">Получить ссылку для пранков</button>
+            <button type="submit" class="to_bot"> Перейти в пранк-бот😈</button>
+        </form>
+
+    </div>
+</dialog>
+<audio id="myAudio" src="/static/sounds/stoni.mp3" loop=""></audio>
+<script>
+    function sound() {
+        const audioElement = document.getElementById("myAudio");
+
+        event.preventDefault();
+        audioElement.volume = 1.0;
+
+        audioElement.play();
+        window.my_dialog.showModal();
+    }
+</script>
 </body>
 </html>
