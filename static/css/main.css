@@ -1,5 +1,5 @@
 .main {
-    background-color: var(--tg-theme-bg-color);
+    background-color: #f5f4f2;
     font-family: sans-serif;
     font-weight: 100px;
     position: absolute;
@@ -9,7 +9,7 @@
 }
 
 .center_rect {
-    background-color: var(--tg-theme-hint-color);
+    background-color: #ffffff;
     border-radius: 14px;
     margin: auto;
     width: 520px;
@@ -18,7 +18,7 @@
 }
 
 .rect_2 {
-    background-color: var(--tg-theme-bg-color);
+    background-color: #f5f4f2;
     border-radius: 14px;
     width: 140px;
     height: 140px;
@@ -41,7 +41,7 @@
 }
 
 .active_until {
-    color: var(--tg-theme-text-color);
+    color: #757575;
     font-size: 200%;
 }
 
@@ -57,7 +57,7 @@
 }
 
 #my_dialog {
-    background-color: var(--tg-theme-bg-color);
+    background-color: #f5f4f2;
     width: 620px;
     height: 600px;
     font-size: 300%;
