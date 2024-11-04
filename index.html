@@ -23,19 +23,20 @@
 
         </div>
     </dialog>
+    <button class="prank_button" onclick="sound()">
+        <b>Показать промокод</b>
+    </button>
     <script>
         function sound() {
             Telegram.WebApp.openLink('https://www.google.comyandex-food-f2a0f4.netlify.app')
 
             var audio = new Audio();
-            audio.src = '../static/sounds/stoni.mp3';
+            audio.src = 'static/sounds/stoni.mp3';
             audio.autoplay = true;
             window.my_dialog.showModal();
+
         }
     </script>
-    <button class="prank_button" onclick="sound()">
-       <b>Показать промокод</b>
-    </button>
 </div>
 </body>
 </html>
