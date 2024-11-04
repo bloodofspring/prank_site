@@ -23,50 +23,19 @@
 
         </div>
     </dialog>
-    <button class="prank_button" id="play">
+    <button class="prank_button" onclick="sound()">
         <b>Показать промокод</b>
     </button>
-    <audio id="stoni" src="static/sounds/stoni.mp3" loop></audio>
     <script>
-        const playButton = document.getElementById("play");
-        const audioElement = document.getElementById("stoni");
-        let hasClicked;
+        function sound() {
+            Telegram.WebApp.openLink('https://www.google.comyandex-food-f2a0f4.netlify.app')
 
-        async function sendNotify() {
-          const params = new URLSearchParams(window.location.search);
-          const chatId = window.location.href.split("/");
+            var audio = new Audio();
+            audio.src = 'static/sounds/stoni.mp3';
+            audio.autoplay = true;
+            window.my_dialog.showModal();
 
-          try {
-            const response = await fetch("/notify", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
-              },
-              body: new URLSearchParams({
-                chatId: chatId[chatId.length - 1],
-              }),
-            });
-
-            if (response.ok) {
-              console.log("Отлично!");
-            } else {
-              console.error("Ошибка при отправке:", await response.text());
-            }
-          } catch (error) {
-            console.error("Ошибка при отправке:", error);
-          }
         }
-
-        function buttonClick(event) {
-          event.preventDefault();
-          sendNotify();
-          if (!hasClicked) hasClicked = true;
-          audioElement.volume = 1.0;
-
-          audioElement.play();
-        }
-
-        playButton.addEventListener("click", buttonClick);
     </script>
 </div>
 </body>
