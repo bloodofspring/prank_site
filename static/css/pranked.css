@@ -1,16 +1,9 @@
 .main {
     font-family: sans-serif;
     font-weight: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.my_dialog {
     background-color: #f8f8f8;
     width: 400px;
-    height: 220px;
+    height: 800px;
     font-size: 190%;
     border-radius: 14px;
     position: absolute;
@@ -21,13 +14,47 @@
     padding: 10px;
 }
 
-.my_dialog div {
-    text-align: center;
+
+.head {
+    padding: 10px;
+    text-align: left;
+
+}
+
+.ready {
+    font-size: 50%;
+    margin: 10px;
+    margin-right: 270px;
 }
 
 .fake_x {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
     margin-right: 10px;
+    margin-left: 337px;
     display: right;
+}
+
+.name {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.prom {
+    font-size: 150%;
+}
+
+.ya {
+    color: red;
+}
+
+.some_dots {
+    font-size: 80%;
+}
+
+.sign {
+    margin-top: 150px;
+    text-align: center;
 }
