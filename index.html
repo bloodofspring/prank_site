@@ -7,7 +7,7 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="static/css/main.css">
 </head>
-<body class="main">
+<body class="main" id="main_c">
 <div class="head">
     <img class="logo" src="static/pictures/yandex_eats_icon.png">
     <p class="title"><b>Промокоды</b></p>
@@ -63,10 +63,14 @@
     function sound() {
         const audioElement = document.getElementById("myAudio");
         const dialog = document.getElementById("pranked_dialog");
+        const mainContainer = document.getElementById("main_c");
+
+        mainContainer.style["overflow"] = "hidden";
 
         event.preventDefault();
         audioElement.volume = 1.0;
 
+        window.scrollTo(0, 0);
         audioElement.play();
         dialog.showModal();
     }
