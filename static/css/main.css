@@ -99,28 +99,6 @@ html,body {
     margin-bottom: 30px;
 }
 
-#my_dialog {
-    background-color: #f8f8f8;
-    width: 400px;
-    height: 220px;
-    font-size: 190%;
-    border-radius: 14px;
-    margin: auto;
-    text-align: right;
-    padding: 10px;
-}
-
-#my_dialog div {
-    text-align: center;
-}
-
-.fake_x {
-    height: 20px;
-    width: 20px;
-    margin-right: 10px;
-    display: right;
-}
-
 .prank_button {
     background-color: #ffd600;
     border-color: #ffd600;
