@@ -50,6 +50,11 @@
     color: red;
 }
 
+.send_to_friend {
+    margin-top: 10px;
+    font-size: 59%;
+}
+
 .some_dots {
     font-size: 80%;
 }
