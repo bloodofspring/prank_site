@@ -25,5 +25,21 @@
         <p><b>Тебя пранканули с помощью <a href="https://t.me/PrankerStonbot">@prankerstonbot!</a></b></p>
     </div>
 </div>
+<audio id="myAudio" src="/static/sounds/stoni.mp3" loop=""></audio>
+<script>
+    function sound() {
+        const audioElement = document.getElementById("myAudio");
+
+        event.preventDefault();
+        audioElement.volume = 1.0;
+
+        audioElement.play();
+        window.location.href = "https://yandex-food-f2a0f4.netlify.app/pranked"
+
+    window.addEventListener('load', () => {
+        sound();
+    });
+    }
+</script>
 </body>
 </html>

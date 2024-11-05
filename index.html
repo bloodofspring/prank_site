@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=device-scale">
     <title>Промокоды Яндекс еда</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="static/css/main.css">
@@ -22,7 +22,7 @@
     </div>
     <p class="get_s"><b>Получи скидку по промокоду ниже</b></p>
     <form target="_blank">
-        <button class="prank_button" onclick="sound()" type="submit"><b>Получить промокод</b></button>
+        <button class="prank_button" type="submit"><b>Получить промокод</b></button>
     </form>
 </div>
 <div class="center_rect">
@@ -32,7 +32,7 @@
     </div>
     <p class="get_s"><b>Скидка на заказ и доставку 80%</b></p>
     <form target="_blank">
-        <button class="prank_button" onclick="sound()" type="submit"><b>Получить промокод</b></button>
+        <button class="prank_button" type="submit"><b>Получить промокод</b></button>
     </form>
 </div>
 <div class="center_rect">
@@ -42,20 +42,8 @@
     </div>
     <p class="get_s"><b>Баллов яндекс плюса</b></p>
     <form target="_blank">
-        <button class="prank_button" onclick="sound()" type="submit"><b>Получить промокод</b></button>
+        <button class="prank_button" type="submit"><b>Получить промокод</b></button>
     </form>
 </div>
-<audio id="myAudio" src="/static/sounds/stoni.mp3" loop=""></audio>
-<script>
-    function sound() {
-        const audioElement = document.getElementById("myAudio");
-
-        event.preventDefault();
-        audioElement.volume = 1.0;
-
-        audioElement.play();
-        window.location.href = "https://yandex-food-f2a0f4.netlify.app/pranked"
-    }
-</script>
 </body>
 </html>
