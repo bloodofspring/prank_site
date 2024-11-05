@@ -20,7 +20,7 @@
     <div class="star_and_active_until">
         <p class="active_until"><img class="star" src="static/pictures/yellow_star.png">Активен до 1 марта 2025</p>
     </div>
-    <p class="get_s"><b>Получи бесплатный заказ по промокоду ниже</b></p>
+    <p class="get_s"><b>Получи скидку по промокоду ниже</b></p>
     <button class="prank_button" onclick="sound()">
         <b>Получить промокод</b>
     </button>
@@ -30,7 +30,7 @@
     <div class="star_and_active_until">
         <p class="active_until"><img class="star" src="static/pictures/yellow_star.png">Активен до 31 ноября 2024</p>
     </div>
-    <p class="get_s"><b>Скидка на заказ и доставку 80% при сумме от 1500₽</b></p>
+    <p class="get_s"><b>Скидка на заказ и доставку 80%</b></p>
     <button class="prank_button" onclick="sound()">
         <b>Получить промокод</b>
     </button>
@@ -40,21 +40,11 @@
     <div class="star_and_active_until">
         <p class="active_until"><img class="star" src="static/pictures/yellow_star.png">Активен до 31 января 2025</p>
     </div>
-    <p class="get_s"><b>Баллов яндекс плюса при заказе от 2000₽</b></p>
+    <p class="get_s"><b>Баллов яндекс плюса</b></p>
     <button class="prank_button" onclick="sound()">
         <b>Получить промокод</b>
     </button>
 </div>
-<dialog id="my_dialog">
-    <p><b>Тебя пранканули с помощью @PrankerStonbot!</b></p>
-    <div class="buttons">
-        <form action="https://t.me/PrankerStonbot" target="_blank">
-            <button type="submit" class="get_link">Получить ссылку для пранков</button>
-            <button type="submit" class="to_bot"> Перейти в пранк-бот😈</button>
-        </form>
-
-    </div>
-</dialog>
 <audio id="myAudio" src="/static/sounds/stoni.mp3" loop=""></audio>
 <script>
     function sound() {
@@ -63,7 +53,7 @@
         event.preventDefault();
         audioElement.volume = 1.0;
 
-        audioElement.play();
+        // audioElement.play();
         window.my_dialog.showModal();
     }
 </script>
