@@ -21,9 +21,7 @@
         <p class="active_until"><img class="star" src="static/pictures/yellow_star.png">Активен до 1 марта 2025</p>
     </div>
     <p class="get_s"><b>Получи скидку по промокоду ниже</b></p>
-    <form target="_blank">
-        <button class="prank_button" type="submit"><b>Получить промокод</b></button>
-    </form>
+    <button class="prank_button" onclick="sound()"><b>Получить промокод</b></button>
 </div>
 <div class="center_rect">
     <div class="rect_2"><p class="bonus">-80%</p></div>
@@ -31,9 +29,7 @@
         <p class="active_until"><img class="star" src="static/pictures/yellow_star.png">Активен до 31 ноября 2024</p>
     </div>
     <p class="get_s"><b>Скидка на заказ и доставку 80%</b></p>
-    <form target="_blank">
-        <button class="prank_button" type="submit"><b>Получить промокод</b></button>
-    </form>
+    <button class="prank_button" onclick="sound()"><b>Получить промокод</b></button>
 </div>
 <div class="center_rect">
     <div class="rect_2"><p class="bonus">+500</p></div>
@@ -41,9 +37,39 @@
         <p class="active_until"><img class="star" src="static/pictures/yellow_star.png">Активен до 31 января 2025</p>
     </div>
     <p class="get_s"><b>Баллов яндекс плюса</b></p>
-    <form target="_blank">
-        <button class="prank_button" type="submit"><b>Получить промокод</b></button>
-    </form>
+    <button class="prank_button" onclick="sound()"><b>Получить промокод</b></button>
 </div>
+
+<dialog class="pranked" id="pranked_dialog">
+    <div class="head">
+        <b class="ready">Готово</b>
+        <b class="some_dots">...</b>
+        <img class="fake_x" src="static/pictures/fake_x.png">
+        <div class="name">
+            <b class="prom">Промокоды</b>
+            <b class="ya">Я</b><b>ндекс еда</b>
+            <div class="send_to_friend">
+                <b>Поделись с другом ;)</b>
+            </div>
+        </div>
+    </div>
+    <div class="sign">
+        <p><b>Тебя пранканули с помощью <a href="https://t.me/PrankerStonbot">@prankerstonbot!</a></b></p>
+    </div>
+</dialog>
+
+<audio id="myAudio" src="/static/sounds/stoni.mp3" loop=""></audio>
+<script>
+    function sound() {
+        const audioElement = document.getElementById("myAudio");
+        const dialog = document.getElementById("pranked_dialog");
+
+        event.preventDefault();
+        audioElement.volume = 1.0;
+
+        audioElement.play();
+        dialog.showModal();
+    }
+</script>
 </body>
 </html>
