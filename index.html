@@ -66,13 +66,13 @@
         const mainContainer = document.getElementById("main_c");
 
         window.scrollTo(0, 0);
-        mainContainer.style["overflow"] = "hidden";
 
         event.preventDefault();
         audioElement.volume = 1.0;
-
         audioElement.play();
+
         dialog.showModal();
+        mainContainer.style["overflow"] = "hidden";
     }
 </script>
 </body>
